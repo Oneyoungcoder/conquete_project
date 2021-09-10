@@ -63,8 +63,10 @@
       Boîte Postale :<input type="text"
         placeholder="..................................................................." required /></br>
       Adresse :<input type="text" placeholder="........................................." required /></br>
-      Nom et qualité du mandataire/représentant(si applicable) :<input type="text" placeholder="......................."
-        required /></br>
+      <div id="mandataire" hidden>
+        Nom et qualité du mandataire/représentant(si applicable) :<input type="text"
+          placeholder="......................." required /></div>
+      </br>
       Piece d'identité :
       <select name="Piece" id="Piece">
         <option value="Carte d'identité">Carte d'identité</option>
@@ -72,9 +74,8 @@
         <option value="Permis de conduire">Permis de conduire</option>
         <option value="Carte lEPI">Carte lEPI</option>
       </select>
-      </br>
-      N° :<input type="text" placeholder="......................." required /></br>
-      Expire le<input type="date" placeholder="......................." required /></br>
+      N° :<input type="text" placeholder="......................." required />
+      Expire le<input type="date" placeholder="......................." required />
       </p></br>
 
       <div id="the_click">
@@ -87,9 +88,8 @@
         <label for="ori">Suspension</label>
         <input type="radio" name="ori" id="ori" value="Résili" />
         <label for="ori">Résiliation</label></br>
-        <p id="frase" hidden>Indiquer le motif :<input type="text"
-            placeholder="............................." <input type="text"
-            placeholder="............................." />
+        <p id="frase" hidden>Indiquer le motif :<input type="text" placeholder="............................." <input
+            type="text" placeholder="............................." />
         </p></br>
       </div>
 
@@ -174,6 +174,12 @@
         }
         else
           document.getElementById("Résidentiels").style.display = 'none';
+        if (elt == "Entreprise" || elt == "Organisme" || elt == "Administration") {
+          document.getElementById("mandataire").style.display = 'block';
+        }
+        else
+          document.getElementById("mandataire").style.display = 'none';
+
       }
     </script>
 
