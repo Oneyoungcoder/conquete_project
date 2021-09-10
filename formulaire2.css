@@ -1,0 +1,63 @@
+th
+{
+  border: 1px solid black;
+}
+
+table
+{
+  border-collapse: collapse;
+}
+
+.socity
+{
+  text-align: center;
+}
+
+.abonne
+{
+  text-align: center;
+  font-size: medium;
+}
+
+.info, .ope
+{
+  text-align: left;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.sign
+{
+  text-align: center;
+}
+
+.surligne
+{
+  text-decoration: overline;
+  text-align: center;
+}
+
+.surlign
+{
+  text-align: center;
+}
+
+.coordonner
+{
+  border: 1px black solid;
+}
+
+.over
+{
+  border: 1px black solid;
+}
+
+.underlin
+{
+  text-decoration: underline;
+}
+
+.fine
+{
+  text-decoration: underline;
+}
