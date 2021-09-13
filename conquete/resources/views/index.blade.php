@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <style>
+        th,
+        td,
+        table {
+            border: 1px solid black;
+            /* border:1px solid black; */
+            border-collapse: collapse;
+        }
+    </style>
+    
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+        <script src = "https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src = "https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#example').DataTable();
+            } );
+        </script>
+</head>
+
+<body>
+    <table id="example" class="display" style="width:100%">
+        <caption>Client physique</caption>
+        <thead>
+            <tr>
+                <th>Numero</a></th>
+                <th>Email</th>
+                <th>Pièce identité</th>
+                <th>Boîte Postal</th>
+                <th>Adresse</th>
+                <th>Exonération</th>
+                <th>IFU</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($clients as $client)
+            <tr>
+                <th><a href="/clients/{{ $client->id }}/edit">{{$client -> Numero}}</a></th>
+                <th>{{$client -> Email}}</th>
+                <th>{{$client -> Pièce identité}}</th>
+                <th>{{$client -> Boîte Postal}}</th>
+                <th>{{$client -> Adresse}}</th>
+                <th>{{$client -> Exonération}}</th>
+                <th>{{$client -> IFU}}</th>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
+    </div>
+    <a href="/clients/create">Add</a>
+
+</body>
+</html>
