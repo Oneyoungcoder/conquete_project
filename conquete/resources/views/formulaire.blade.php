@@ -84,7 +84,7 @@
 </head>
 
 <body>
-  <form method="POST" action="azert.php">
+  <form method="POST" action="Clients">
     <div class="im">
       <img src="/images/index1.png" alt="Ima444ge">
     </div>
@@ -128,9 +128,9 @@
           <label for="Prénom">Prénom</label>
           <input type="text" name="Prénom" required /><br>
           Sexe(Si applicable) : <br>
-          <input type="radio" name="sexe" value="sexe" id="sexe" required />
+          <input type="radio" name="sexe" value="Masculin" id="sexe" required />
           <label for="radio">Masculin</label> <br>
-          <input type="radio" name="sexe" value="sexe" id="sexe" required />
+          <input type="radio" name="sexe" value="Féminin" id="sexe" required />
           <label for="radio">Feminin</label>
           </br>
         </div><br>

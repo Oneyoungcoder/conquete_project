@@ -29,31 +29,38 @@
         <caption>Client physique</caption>
         <thead>
             <tr>
+                <th>Nom</th>
+                <th>Prenoms</th>
+                <th>Sexe</th>
+                <th>Raison_sociale</th>
+                <th>Nom_mandataire</th>
+                <th>Qualite_mandataire</th>  
                 <th>Numero</a></th>
                 <th>Email</th>
                 <th>Pièce identité</th>
                 <th>Boîte Postal</th>
                 <th>Adresse</th>
                 <th>Exonération</th>
-                <th>IFU</th>
             </tr>
         </thead>
         <tbody>
             @foreach($clients as $client)
             <tr>
-                <th><a href="/clients/{{ $client->id }}/edit">{{$client -> Numero}}</a></th>
-                <th>{{$client -> Email}}</th>
-                <th>{{$client -> Pièce identité}}</th>
-                <th>{{$client -> Boîte Postal}}</th>
-                <th>{{$client -> Adresse}}</th>
-                <th>{{$client -> Exonération}}</th>
-                <th>{{$client -> IFU}}</th>
+                <th>{{$Client -> Nom}}</th>
+                <th>{{$Client -> Prenoms}}</th>
+                <th>{{$Client -> Sexe}}</th>
+                <th>{{$Client -> Nom_mandataire}}</th>
+                <th>{{$Client -> Qualite_mandataire}}</th>
+                <th><a href="/Clients/{{ $Client->id }}/edit">{{$Client -> Numero}}</a></th>
+                <th>{{$Client -> Email}}</th>
+                <th>{{$Client -> Adresse}}</th>
+                <th>{{$Client -> Exonération}}</th>
             </tr>
             @endforeach
         </tbody>
     </table>
     </div>
-    <a href="/clients/create">Add</a>
+    <a href="/Clients/create">Add</a>
 
 </body>
 </html>

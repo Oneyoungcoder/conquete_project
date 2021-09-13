@@ -82,7 +82,7 @@
   </style>
 </head>
 <body>
-    <form method="POST" action="/clients/{{ $client->id }}">
+    <form method="POST" action="/Clients/{{ $Client->id }}">
         @method('PUT')
         
         @csrf
@@ -116,18 +116,18 @@
 
         <div hidden id="Raison sociale">
           <label for="Raison sociale">Raison sociale</label>
-          <input type="text" name="Raison sociale" value="{{$personne__physiques ->Raison sociale}}"/>
+          <input type="text" name="Raison sociale" value="{{$Personne__Morale ->Raison sociale}}"/>
         </div>
 
         <div hidden id="Physique">
           <label for="Nom">Nom</label>
-          <input type="text" name="Nom" value="{{$personne__physiques ->Nom}}" required /></br>
+          <input type="text" name="Nom" value="{{$Personne__Physique ->Nom}}" required /></br>
           <label for="Prénom">Prénom</label>
-          <input type="text" name="Prénom" value="{{$personne__physiques ->Prénom}}"required /><br>
+          <input type="text" name="Prénom" value="{{$Personne__Physique ->Prénom}}"required /><br>
           Sexe(Si applicable) : <br>
-          <input type="radio" name="sexe" value="{{$personne__physiques -> Masculin}}" id="sexe" required />
+          <input type="radio" name="sexe" value="Masculin" id="sexe" required />
           <label for="radio">Masculin</label> <br>
-          <input type="radio" name="sexe" value="{{$personne__physiques -> Féminin}}" id="sexe" required />
+          <input type="radio" name="sexe" value="Féminin" id="sexe" required />
           <label for="radio">Feminin</label>
           </br>
         </div><br>
@@ -136,22 +136,22 @@
 
 
        Téléphone :<input type="tel" placeholder="+XXX XX XX XX XX"
-          pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" value="{{$client -> Numéro}}" required /> <br>
+          pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}" value="{{$Client -> Numéro}}" required /> <br>
           Email :<input type="email"
-          placeholder="........................................" value="{{$client -> Email}}"required /></br>
+          placeholder="........................................" value="{{$Client -> Email}}"required /></br>
         Boîte Postale :<input type="text"
-          placeholder="..................................................................." value="{{$client -> Boite Postale}}"required /></br>
-        Adresse :<input type="text" placeholder="........................................." value="{{$client -> Adresse}}"required /></br>
+          placeholder="..................................................................." value="{{$Client -> Boite Postale}}"required /></br>
+        Adresse :<input type="text" placeholder="........................................." value="{{$Client -> Adresse}}"required /></br>
         <div id="mandataire" hidden>
           Nom et qualité du mandataire/représentant:<input type="text"
-            placeholder="......................." value="{{$$personne__morales -> Nom/Qualité du mandataire" required /></div>
+            placeholder="......................." value="{{$$Personne__Morale -> Nom/Qualité du mandataire" required /></div>
         </br>
         Piece d'identité :
         <select name="Piece" id="Piece">
-          <option value="{{$client -> Carte d'identité}}">Carte d'identité</option>
-          <option value="{{$client ->Passeport}}">Passeport</option>
-          <option value="{{$client ->Permis de conduire}}">Permis de conduire</option>
-          <option value="{{$client ->Carte lEPI}}">Carte lEPI</option>
+          <option value="Carte d'identité">Carte d'identité</option>
+          <option value="Passeport">Passeport</option>
+          <option value="Permis de conduire">Permis de conduire</option>
+          <option value="Carte lEPI">Carte lEPI</option>
         </select>
         N° :<input type="text" placeholder="......................." required />
         Expire le<input type="date" placeholder="......................." required />
@@ -213,7 +213,7 @@
     </script>
 
         <button>Update</button></br>
-        <a href="/physiques/">Cancel</a></br>
+        <a href="/Clients/">Cancel</a></br>
     </form>
 </body>
 </html>
