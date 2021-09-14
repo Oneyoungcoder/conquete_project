@@ -13,8 +13,7 @@ class CreatePersonnePhysiquesTable extends Migration
      */
     public function up()
     {
-        Schema::create('personne__physiques', function (Blueprint $table) {
-            $table->id();
+        Schema::create('personne_physiques', function (Blueprint $table) {
             $table->string('Nom');
             $table->string('Prenoms');
             $table->string('Sexe');
@@ -31,6 +30,6 @@ class CreatePersonnePhysiquesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('personne__physiques');
+        Schema::dropIfExists('personne_physiques');
     }
 }

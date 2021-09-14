@@ -6,7 +6,6 @@
         td,
         table {
             border: 1px solid black;
-            /* border:1px solid black; */
             border-collapse: collapse;
         }
     </style>
@@ -32,35 +31,36 @@
                 <th>Nom</th>
                 <th>Prenoms</th>
                 <th>Sexe</th>
-                <th>Raison_sociale</th>
-                <th>Nom_mandataire</th>
+                <th>IFU_physique</th>
+                <!-- <th>Nom_mandataire</th>
                 <th>Qualite_mandataire</th>  
                 <th>Numero</a></th>
                 <th>Email</th>
                 <th>Pièce identité</th>
                 <th>Boîte Postal</th>
                 <th>Adresse</th>
-                <th>Exonération</th>
+                <th>Exonération</th> -->
             </tr>
         </thead>
         <tbody>
-            @foreach($clients as $client)
+            @foreach($personne_physique as $Personne_Physique)
             <tr>
-                <th>{{$Client -> Nom}}</th>
-                <th>{{$Client -> Prenoms}}</th>
-                <th>{{$Client -> Sexe}}</th>
-                <th>{{$Client -> Nom_mandataire}}</th>
+                <th>{{$Personne_Physique -> Nom}}</th>
+                <th>{{$Personne_Physique -> Prenoms}}</th>
+                <th>{{$Personne_Physique -> Sexe}}</th>
+                <th>{{$Personne_Physique -> IFU_physique}}</th>
+                <!-- <th>{{$Client -> Nom_mandataire}}</th>
                 <th>{{$Client -> Qualite_mandataire}}</th>
                 <th><a href="/Clients/{{ $Client->id }}/edit">{{$Client -> Numero}}</a></th>
                 <th>{{$Client -> Email}}</th>
                 <th>{{$Client -> Adresse}}</th>
-                <th>{{$Client -> Exonération}}</th>
+                <th>{{$Client -> Exonération}}</th> -->
             </tr>
             @endforeach
         </tbody>
     </table>
     </div>
-    <a href="/Clients/create">Add</a>
-
+    
+    <a href="/clients/create">Add</a>
 </body>
 </html>

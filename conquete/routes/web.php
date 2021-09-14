@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\Personne_physiqueController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +16,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
- Route::get('/Clients', [ClientController::class, 'index']);
- Route::get('/Clients/{Client}/edit', [ClientController::class, 'edit']);
- Route::get('/Clients/create', [ClientController::class, 'create']);
- Route::put('/Clients/{Client}', [ClientController::class, 'update']);
- Route::post('/Clients', [ClientController::class, 'store']);
+  Route::get('/clients', [Personne_physiqueController::class, 'index']);
+
+  Route::get('/clients/{client}/edit', [Personne_physiqueController::class, 'edit']);
+  Route::get('/clients/create', [Personne_physiqueController::class, 'create']);
+  Route::put('/clients/{client}', [Personne_physiqueController::class, 'update']);
+  Route::post('/clients', [Personne_physiqueController::class, 'store']);

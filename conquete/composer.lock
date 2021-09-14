@@ -458,7 +458,7 @@
                 "satooshi/php-coveralls": "^1.0.1"
             },
             "suggest": {
-                "ext-intl": "PHP Internationalization Libraries are required to use the SpoofChecking validation"
+                "ext-intl": "PHP Internationalization Libraries are   to use the SpoofChecking validation"
             },
             "type": "library",
             "extra": {
@@ -671,9 +671,9 @@
                 "psr/log": "^1.1"
             },
             "suggest": {
-                "ext-curl": "Required for CURL handler support",
-                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
-                "psr/log": "Required for using the Log middleware"
+                "ext-curl": "  for CURL handler support",
+                "ext-intl": "  for Internationalized Domain Name (IDN) support",
+                "psr/log": "  for using the Log middleware"
             },
             "type": "library",
             "extra": {
@@ -974,33 +974,33 @@
                 "symfony/cache": "^5.1.4"
             },
             "suggest": {
-                "aws/aws-sdk-php": "Required to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.189.0).",
-                "brianium/paratest": "Required to run tests in parallel (^6.0).",
-                "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6|^3.0).",
-                "ext-ftp": "Required to use the Flysystem FTP driver.",
-                "ext-gd": "Required to use Illuminate\\Http\\Testing\\FileFactory::image().",
-                "ext-memcached": "Required to use the memcache cache driver.",
-                "ext-pcntl": "Required to use all features of the queue worker.",
-                "ext-posix": "Required to use all features of the queue worker.",
-                "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0).",
-                "fakerphp/faker": "Required to use the eloquent factory builder (^1.9.1).",
-                "filp/whoops": "Required for friendly error pages in development (^2.8).",
-                "guzzlehttp/guzzle": "Required to use the HTTP Client, Mailgun mail driver and the ping methods on schedules (^6.5.5|^7.0.1).",
-                "laravel/tinker": "Required to use the tinker console command (^2.0).",
-                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
-                "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
-                "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
-                "mockery/mockery": "Required to use mocking (^1.4.2).",
-                "nyholm/psr7": "Required to use PSR-7 bridging features (^1.2).",
-                "pda/pheanstalk": "Required to use the beanstalk queue driver (^4.0).",
-                "phpunit/phpunit": "Required to use assertions and run tests (^8.5.8|^9.3.3).",
-                "predis/predis": "Required to use the predis connector (^1.1.2).",
-                "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
-                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^4.0|^5.0|^6.0).",
-                "symfony/cache": "Required to PSR-6 cache bridge (^5.1.4).",
-                "symfony/filesystem": "Required to enable support for relative symbolic links (^5.1.4).",
-                "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^2.0).",
-                "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
+                "aws/aws-sdk-php": "  to use the SQS queue driver, DynamoDb failed job storage and SES mail driver (^3.189.0).",
+                "brianium/paratest": "  to run tests in parallel (^6.0).",
+                "doctrine/dbal": "  to rename columns and drop SQLite columns (^2.6|^3.0).",
+                "ext-ftp": "  to use the Flysystem FTP driver.",
+                "ext-gd": "  to use Illuminate\\Http\\Testing\\FileFactory::image().",
+                "ext-memcached": "  to use the memcache cache driver.",
+                "ext-pcntl": "  to use all features of the queue worker.",
+                "ext-posix": "  to use all features of the queue worker.",
+                "ext-redis": "  to use the Redis cache and queue drivers (^4.0|^5.0).",
+                "fakerphp/faker": "  to use the eloquent factory builder (^1.9.1).",
+                "filp/whoops": "  for friendly error pages in development (^2.8).",
+                "guzzlehttp/guzzle": "  to use the HTTP Client, Mailgun mail driver and the ping methods on schedules (^6.5.5|^7.0.1).",
+                "laravel/tinker": "  to use the tinker console command (^2.0).",
+                "league/flysystem-aws-s3-v3": "  to use the Flysystem S3 driver (^1.0).",
+                "league/flysystem-cached-adapter": "  to use the Flysystem cache (^1.0).",
+                "league/flysystem-sftp": "  to use the Flysystem SFTP driver (^1.0).",
+                "mockery/mockery": "  to use mocking (^1.4.2).",
+                "nyholm/psr7": "  to use PSR-7 bridging features (^1.2).",
+                "pda/pheanstalk": "  to use the beanstalk queue driver (^4.0).",
+                "phpunit/phpunit": "  to use assertions and run tests (^8.5.8|^9.3.3).",
+                "predis/predis": "  to use the predis connector (^1.1.2).",
+                "psr/http-message": "  to allow Storage::put to accept a StreamInterface (^1.0).",
+                "pusher/pusher-php-server": "  to use the Pusher broadcast driver (^4.0|^5.0|^6.0).",
+                "symfony/cache": "  to PSR-6 cache bridge (^5.1.4).",
+                "symfony/filesystem": "  to enable support for relative symbolic links (^5.1.4).",
+                "symfony/psr-http-message-bridge": "  to use PSR-7 bridging features (^2.0).",
+                "wildbit/swiftmailer-postmark": "  to use Postmark mail driver (^3.0)."
             },
             "type": "library",
             "extra": {
@@ -1216,7 +1216,7 @@
                 "vimeo/psalm": "^4.7.3"
             },
             "suggest": {
-                "symfony/yaml": "v2.3+ required if using the Front Matter extension"
+                "symfony/yaml": "v2.3+   if using the Front Matter extension"
             },
             "type": "library",
             "extra": {
@@ -1561,7 +1561,7 @@
                 "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
                 "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
-                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+  )",
                 "ext-mbstring": "Allow to work properly with unicode symbols",
                 "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
@@ -2737,7 +2737,7 @@
             },
             "autoload": {
                 "files": [
-                    "lib/swift_required.php"
+                    "lib/swift_ .php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5113,7 +5113,7 @@
                 "phpunit/phpunit": "^7.5.20 || ^8.5.14 || ^9.5.1"
             },
             "suggest": {
-                "ext-filter": "Required to use the boolean validator."
+                "ext-filter": "  to use the boolean validator."
             },
             "type": "library",
             "extra": {
@@ -5589,10 +5589,10 @@
                 "symfony/phpunit-bridge": "^4.4 || ^5.2"
             },
             "suggest": {
-                "ext-curl": "Required by Faker\\Provider\\Image to download images.",
-                "ext-dom": "Required by Faker\\Provider\\HtmlLorem for generating random HTML.",
-                "ext-iconv": "Required by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
-                "ext-mbstring": "Required for multibyte Unicode string functionality."
+                "ext-curl": "  by Faker\\Provider\\Image to download images.",
+                "ext-dom": "  by Faker\\Provider\\HtmlLorem for generating random HTML.",
+                "ext-iconv": "  by Faker\\Provider\\ru_RU\\Text::realText() for generating real Russian text.",
+                "ext-mbstring": "  for multibyte Unicode string functionality."
             },
             "type": "library",
             "extra": {

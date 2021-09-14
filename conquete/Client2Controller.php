@@ -21,12 +21,12 @@ class ClientController extends Controller
     public function update(Client $client)
     {   
         request()->validate([
-            'Numero' =>'required',
-            'Email' => 'required',
-            'Piece' => 'required',
-            'Boite' => 'required',
-            'Adresse' => 'required',
-            'Exoneration' => 'required',
+            'Numero' =>' ',
+            'Email' => ' ',
+            'Piece' => ' ',
+            'Boite' => ' ',
+            'Adresse' => ' ',
+            'Exoneration' => ' ',
         ]);
         $client->update([
             'Numero' => request('Numero'),
@@ -43,12 +43,12 @@ class ClientController extends Controller
     public function store()
     {  
         request()->validate([
-            'Numero' =>'required',
-            'Email' => 'required',
-            'Piece' => 'required',
-            'Boite' => 'required',
-            'Adresse' => 'required',
-            'Exonération' => 'required',
+            'Numero' =>' ',
+            'Email' => ' ',
+            'Piece' => ' ',
+            'Boite' => ' ',
+            'Adresse' => ' ',
+            'Exonération' => ' ',
         ]);
         
         Client::create([

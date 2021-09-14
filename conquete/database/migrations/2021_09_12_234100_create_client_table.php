@@ -22,8 +22,8 @@ class CreateClientTable extends Migration
             $table->string('Adresse');
             $table->boolean('Exonération');
             $table->string('IFU');
-            $table->foreign('IFU')->references('IFU_physique')->on('personne__physiques');
-            $table->foreign('IFU')->references('IFU_morale')->on('personne__morales');
+            $table->foreign('IFU')->references('IFU_physique')->on('personne_physiques');
+            $table->foreign('IFU')->references('IFU_morale')->on('personne_morales');
         });
     }
 
