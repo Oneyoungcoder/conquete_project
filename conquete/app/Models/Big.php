@@ -5,12 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Personne_Physique extends Model
+class Big extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'Nom',
-        'Prenom',
-        'Sexe',
+        'Name',
+        'Telephone',
+        'Offre',
+        'Forfait',
+        'Adresse'
     ];
+
 }

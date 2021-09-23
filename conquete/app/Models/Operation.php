@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Personne_Physique extends Model
+class Operation extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'Nom',
-        'Prenom',
-        'Sexe',
+        'Type_operation',
+        'Motif',
+        'Offre',
+        'Forfait'
     ];
 }

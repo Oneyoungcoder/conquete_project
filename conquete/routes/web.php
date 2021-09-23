@@ -1,9 +1,7 @@
 <?php
 
+use App\Http\Controllers\BigController;
 use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\Personne_physiqueController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-  Route::get('/clients', [Personne_physiqueController::class, 'index']);
 
-  Route::get('/clients/{client}/edit', [Personne_physiqueController::class, 'edit']);
-  Route::get('/clients/create', [Personne_physiqueController::class, 'create']);
-  Route::put('/clients/{client}', [Personne_physiqueController::class, 'update']);
-  Route::post('/clients', [Personne_physiqueController::class, 'store']);
+// Route::get('/inscription', 'App\Http\Controllers\BigController@create');
+// Route::post('/inscription', 'App\Http\Controllers\BigController@store');
+
+Route::get('create', [ BigController::class, 'create']);
+Route::post('create' , [ BigController::class, 'store']);
+Route::get('index', [BigController::class, 'index']);

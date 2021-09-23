@@ -9,11 +9,14 @@ class Client extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'Statut',
+        'Id_statut',
+        'Telephone',
         'Email',
-        'Pièce identité',
-        'Boîte Postal',
+        'Piece',
+        'Numro_piece',
+        'Boite',
         'Adresse',
         'Exonération',
-        'IFU',
     ];
 }

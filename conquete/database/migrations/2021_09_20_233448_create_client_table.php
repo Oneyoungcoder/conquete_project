@@ -14,16 +14,19 @@ class CreateClientTable extends Migration
     public function up()
     {
         Schema::create('client', function (Blueprint $table) {
+            
             $table->id();
-            $table->timestamps();
-            $table->string('Email');
-            $table->string('Pièce identité');
-            $table->string('Boîte Postal');
+  
+            $table->string('Statut');
+            $table->unsignedInteger('Id_statut')->nullable()->references('Id_pm')->on('personne_morale');
+            $table->string('Telephone');
             $table->string('Adresse');
-            $table->boolean('Exonération');
-            $table->string('IFU');
-            $table->foreign('IFU')->references('IFU_physique')->on('personne_physiques');
-            $table->foreign('IFU')->references('IFU_morale')->on('personne_morales');
+            $table->string('Email');
+            $table->string('Piece');
+            $table->string('Boite');
+            $table->string('Numero_piece');
+            $table->boolean('Exoneration');
+            $table->timestamps();
         });
     }
 

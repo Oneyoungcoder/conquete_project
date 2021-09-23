@@ -8,10 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Personne_morale extends Model
 {
     use HasFactory;
-    protected $fillable = [
+    protected $fillable = [ 
         'Raison sociale',
         'Nom_mandataire',
         'Qualite_mandataire',
-        'IFU_morale'  
     ];
 }
