@@ -159,7 +159,8 @@ class BigController extends Controller
      */
     public function edit(Big $big)
     {
-        //
+        // return view('categories.edit', ['categorie' => $categorie]);
+        return view('edit', ['big' => $big]);
     }
 
     /**

@@ -55,7 +55,7 @@
         <tbody>
             @foreach($bigs as $big)
             <tr>
-                <th><a href="/create">{{$big->Name}}</th>
+                <th><a href="{{ $big->id }}/edit">{{$big->Name}}</th>
                 <th>{{$big->Telephone}}</th>
                 <th>{{$big->Offre}}</th>
                 <th>{{$big->Forfait}}</th>
