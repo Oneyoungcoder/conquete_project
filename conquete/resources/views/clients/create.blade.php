@@ -37,6 +37,7 @@
       text-align: left;
       font-weight: bold;
       font-size: medium;
+      text-decoration: underline;
     }
 
     .sign {
@@ -87,7 +88,7 @@
       text-align: center;
     }
 
-    button {
+    form button {
       width: 110px;
       height: 35px;
       margin: 0 10px;
@@ -111,7 +112,7 @@
     .tab {
       overflow: hidden;
       border: 1px solid #ccc;
-      /* background-color: #f1f1f1; */
+      background-color: #f1f1f1;
     }
 
     .tab button {
@@ -135,9 +136,7 @@
 
     .tabcontent {
       display: none;
-      padding: 3px 6px;
-      border: 1px solid #ccc;
-      border-top: none;
+      padding: 6px 12px;
       -webkit-animation: fadeEffect 1s;
       animation: fadeEffect 1s;
     }
@@ -208,9 +207,9 @@
 
             Sexe(Si applicable) : <br>
             <input type="radio" name="Sexe" value="Masculin" id="Sexe" />
-            <label for="radio">Masculin</label> <br>
+            <label for="Sexe">Masculin</label> <br>
             <input type="radio" name="Sexe" value="Feminin" id="Sexe" />
-            <label for="radio">Feminin</label>
+            <label for="Sexe">Feminin</label>
             </br>
           </div><br>
 
@@ -446,17 +445,17 @@
   </script>
   <script>
     function openCity(evt, cityName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active");
-      }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
     }
     document.getElementById("defaultOpen").click();
   </script>

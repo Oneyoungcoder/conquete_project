@@ -20,7 +20,6 @@ Route::get('/', function () {
 });
 
   Route::get('/clients', [Personne_physiqueController::class, 'index']);
-
   Route::get('/clients/{client}/edit', [Personne_physiqueController::class, 'edit']);
   Route::get('/clients/create', [Personne_physiqueController::class, 'create']);
   Route::put('/clients/{client}', [Personne_physiqueController::class, 'update']);

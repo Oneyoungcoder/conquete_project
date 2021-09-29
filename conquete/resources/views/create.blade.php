@@ -81,13 +81,13 @@
       text-align: center;
     }
 
-    .btn-box {
+    /* .btn-box {
       width: 100%;
       margin: 30px auto;
       text-align: center;
-    }
+    } */
 
-    button {
+    /* button {
       width: 110px;
       height: 35px;
       margin: 0 10px;
@@ -97,7 +97,7 @@
       outline: none;
       color: #fff;
       cursor: pointer;
-    }
+    } */
 
     .container {
       width: 1000px;
